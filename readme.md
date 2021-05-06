@@ -534,3 +534,19 @@ $faker->randomHtml($maxDepth = 2, $maxWidth = 3);    // <html><head><title>&#353
 ## License
 
 Faker is released under the MIT License. See the bundled LICENSE file for details.
+
+
+# TODO features
+1. 脱敏对象：文本文件、图片。
+2. 自动发现脱敏项功能 - 嗅探、发现、脱敏设置
+3. 遮蔽、仿真、乱序、脱敏字典
+4. 张三三脱敏后 张**
+5. 主键pk 子增长与hash主键的脱敏
+6. 身份证、银行卡有一些分析能力，保证农行卡脱敏后依然是农行卡
+7. 规则设定：例如金额 设置5%涨幅这种，我可以弄成找到字段的max和min，然后random
+8. column的关联变更，例如 身份证号列。出生日期列、年龄列关联
+9. 基于脱敏字典进行关联列变更，比如 脱敏仿真了 symbol。股票名称也随之改变，而且和symbol可以真实对应
+10. 加密脱敏
+11. 跨库脱敏，库到文件。库到库
+12. 权限系统。
+13. 可提供接口
